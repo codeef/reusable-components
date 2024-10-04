@@ -1,5 +1,11 @@
 # @codeef/reusable-components
 
+## 1.0.2
+
+### Patch Changes
+
+- c815140: Using tsc as build tool for tree shaking
+
 ## 1.0.1
 
 ### Patch Changes
