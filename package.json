@@ -1,6 +1,6 @@
 {
   "name": "@codeef/reusable-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This package implements react components based on MUI",
   "type": "module",
   "main": "lib/cjs/index.js",
