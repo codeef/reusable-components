@@ -1,5 +1,11 @@
 # @codeef/reusable-components
 
+## 1.0.3
+
+### Patch Changes
+
+- 841dba4: corrct typo
+
 ## 1.0.2
 
 ### Patch Changes
