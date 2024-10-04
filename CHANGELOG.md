@@ -1,5 +1,11 @@
 # @codeef/reusable-components
 
+## 1.0.1
+
+### Patch Changes
+
+- b9368ed: Made our package tree shakable. Now it's being built with tsc
+
 ## 1.0.0
 
 ### Major Changes
