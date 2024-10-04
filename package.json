@@ -3,23 +3,22 @@
   "version": "1.0.1",
   "description": "This package implements react components based on MUI",
   "type": "module",
-  "main": "lib/cjs/index.js",
+  "main": "lib/index.cjs",
   "exports": {
     "import": {
-      "default": "./lib/esm/index.js",
+      "default": "./lib/index.esm.js",
       "types": "./lib/types/index.d.ts"
     },
     "require": {
-      "default": "./lib/cjs/index.js",
+      "default": "./lib/index.cjs",
       "types": "./lib/types/index.d.ts"
     }
   },
-  "sideEffects": false,
   "files": [
     "lib"
   ],
   "scripts": {
-    "build": "tsc --skipLibCheck --project tsconfig.esm.json && tsc --skipLibCheck --project tsconfig.cjs.json",
+    "build": "rollup -c --bundleConfigAsCjs",
     "release-package": "npm run build && npx changeset publish"
   },
   "author": "codeef",
@@ -35,6 +34,11 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.13.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.4.2"
   }
 }
